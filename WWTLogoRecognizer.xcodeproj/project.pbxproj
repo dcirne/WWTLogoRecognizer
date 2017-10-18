@@ -12,9 +12,12 @@
 		979FE7871F97DE26004AB142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7851F97DE26004AB142 /* Main.storyboard */; };
 		979FE7891F97DE26004AB142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7881F97DE26004AB142 /* Assets.xcassets */; };
 		979FE78C1F97DE26004AB142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979FE78A1F97DE26004AB142 /* LaunchScreen.storyboard */; };
+		B90D49977022D30EBF53FBF6 /* Pods_WWTLogoRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00124DC944831F1AEE5463DA /* Pods_WWTLogoRecognizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00124DC944831F1AEE5463DA /* Pods_WWTLogoRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWTLogoRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FFD965CAE0E236BB39E157A /* Pods-WWTLogoRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWTLogoRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 		979FE77E1F97DE26004AB142 /* WWTLogoRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWTLogoRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979FE7811F97DE26004AB142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		979FE7831F97DE26004AB142 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		979FE7881F97DE26004AB142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979FE78B1F97DE26004AB142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979FE78D1F97DE26004AB142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9E4D398BF219B824D5BF55 /* Pods-WWTLogoRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWTLogoRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90D49977022D30EBF53FBF6 /* Pods_WWTLogoRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130E03F2776BA9B1E43E4362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00124DC944831F1AEE5463DA /* Pods_WWTLogoRecognizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		979FE7751F97DE26004AB142 = {
 			isa = PBXGroup;
 			children = (
 				979FE7801F97DE26004AB142 /* WWTLogoRecognizer */,
 				979FE77F1F97DE26004AB142 /* Products */,
+				AC4A4526C7DC3413D4838D58 /* Pods */,
+				130E03F2776BA9B1E43E4362 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = WWTLogoRecognizer;
 			sourceTree = "<group>";
 		};
+		AC4A4526C7DC3413D4838D58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FFD965CAE0E236BB39E157A /* Pods-WWTLogoRecognizer.debug.xcconfig */,
+				FC9E4D398BF219B824D5BF55 /* Pods-WWTLogoRecognizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 979FE7901F97DE26004AB142 /* Build configuration list for PBXNativeTarget "WWTLogoRecognizer" */;
 			buildPhases = (
+				46B2E03E273E0921F38C961A /* [CP] Check Pods Manifest.lock */,
 				979FE77A1F97DE26004AB142 /* Sources */,
 				979FE77B1F97DE26004AB142 /* Frameworks */,
 				979FE77C1F97DE26004AB142 /* Resources */,
+				946ECD8F36CA1DC488D57782 /* [CP] Embed Pods Frameworks */,
+				BD82A35CBA52CBD83FD8E14E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46B2E03E273E0921F38C961A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWTLogoRecognizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946ECD8F36CA1DC488D57782 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD82A35CBA52CBD83FD8E14E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		979FE77A1F97DE26004AB142 /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		979FE7911F97DE26004AB142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFD965CAE0E236BB39E157A /* Pods-WWTLogoRecognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +366,7 @@
 		};
 		979FE7921F97DE26004AB142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9E4D398BF219B824D5BF55 /* Pods-WWTLogoRecognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
