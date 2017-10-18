@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Clarifai_Apple_SDK
 
 class ImageRecognizerViewController: UIViewController {
     let image: UIImage
@@ -26,4 +27,11 @@ class ImageRecognizerViewController: UIViewController {
 
         imageView?.image = image
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        predict()
+    }
+    
+    private func predict() {}
 }
