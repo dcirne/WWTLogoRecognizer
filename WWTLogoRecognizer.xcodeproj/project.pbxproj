@@ -12,6 +12,8 @@
 		979FE7871F97DE26004AB142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7851F97DE26004AB142 /* Main.storyboard */; };
 		979FE7891F97DE26004AB142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7881F97DE26004AB142 /* Assets.xcassets */; };
 		979FE78C1F97DE26004AB142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979FE78A1F97DE26004AB142 /* LaunchScreen.storyboard */; };
+		979FE7941F97F253004AB142 /* ImageRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7931F97F253004AB142 /* ImageRecognizerViewController.swift */; };
+		979FE7961F97F29F004AB142 /* ImageRecognizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7951F97F29F004AB142 /* ImageRecognizerViewController.xib */; };
 		B90D49977022D30EBF53FBF6 /* Pods_WWTLogoRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00124DC944831F1AEE5463DA /* Pods_WWTLogoRecognizer.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		979FE7881F97DE26004AB142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979FE78B1F97DE26004AB142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979FE78D1F97DE26004AB142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979FE7931F97F253004AB142 /* ImageRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognizerViewController.swift; sourceTree = "<group>"; };
+		979FE7951F97F29F004AB142 /* ImageRecognizerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageRecognizerViewController.xib; sourceTree = "<group>"; };
 		FC9E4D398BF219B824D5BF55 /* Pods-WWTLogoRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWTLogoRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,8 @@
 				979FE7881F97DE26004AB142 /* Assets.xcassets */,
 				979FE78A1F97DE26004AB142 /* LaunchScreen.storyboard */,
 				979FE78D1F97DE26004AB142 /* Info.plist */,
+				979FE7931F97F253004AB142 /* ImageRecognizerViewController.swift */,
+				979FE7951F97F29F004AB142 /* ImageRecognizerViewController.xib */,
 			);
 			path = WWTLogoRecognizer;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979FE7961F97F29F004AB142 /* ImageRecognizerViewController.xib in Resources */,
 				979FE78C1F97DE26004AB142 /* LaunchScreen.storyboard in Resources */,
 				979FE7891F97DE26004AB142 /* Assets.xcassets in Resources */,
 				979FE7871F97DE26004AB142 /* Main.storyboard in Resources */,
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				979FE7841F97DE26004AB142 /* ViewController.swift in Sources */,
+				979FE7941F97F253004AB142 /* ImageRecognizerViewController.swift in Sources */,
 				979FE7821F97DE26004AB142 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

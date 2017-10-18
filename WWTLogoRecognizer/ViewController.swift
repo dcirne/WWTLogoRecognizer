@@ -12,10 +12,12 @@ import AVFoundation
 class ViewController: UIViewController {
     
     private let captureSession = AVCaptureSession()
+    private let photoOutput = AVCapturePhotoOutput()
     private var videoPreviewLayer: AVCaptureVideoPreviewLayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpTapGesture()
         startVideoPreview()
     }
     
@@ -31,10 +33,18 @@ class ViewController: UIViewController {
         }
         do {
             let input = try AVCaptureDeviceInput(device: device)
-            captureSession.addInput(input)
+            if captureSession.canAddInput(input) {
+                captureSession.addInput(input)
+            }
             
-            let output = AVCaptureVideoDataOutput()
-            captureSession.addOutput(output)
+            let videoOutput = AVCaptureVideoDataOutput()
+            if captureSession.canAddOutput(videoOutput) {
+                captureSession.addOutput(videoOutput)
+            }
+            
+            if captureSession.canAddOutput(photoOutput) {
+                captureSession.addOutput(photoOutput)
+            }
             
             let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             view.layer.addSublayer(previewLayer)
@@ -44,5 +54,26 @@ class ViewController: UIViewController {
         } catch {
             print("Cannot start video session")
         }
+    }
+    
+    private func setUpTapGesture() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc
+    private func viewTapped() {
+        photoOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+    }
+}
+
+extension ViewController: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        guard let cgImage = photo.cgImageRepresentation()?.takeUnretainedValue() else {
+            return
+        }
+        let uiImage = UIImage(cgImage: cgImage, scale: 1, orientation: .right)
+        let imageRecognizerViewController = ImageRecognizerViewController(image: uiImage)
+        present(imageRecognizerViewController, animated: true)
     }
 }
