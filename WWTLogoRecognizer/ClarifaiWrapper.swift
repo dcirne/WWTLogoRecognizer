@@ -7,6 +7,7 @@ class ClarifaiWrapper {
     
     private(set) var isModelAvailable = false
     private(set) var modelId: String?
+    private(set) var wwtLogoModel: Model?
     
     private init() {
         NotificationCenter.default.addObserver(forName: Notification.Name.CAIWillFetchModel,
@@ -50,5 +51,37 @@ class ClarifaiWrapper {
         }
         print("model id: \(modelId)")
         self.modelId = modelId
+    }
+    
+    func loadModels(completion: @escaping  (Bool) -> ()) {
+        Clarifai.sharedInstance().load(entityType: .model, range: NSMakeRange(0, 1)) { _, loadModelsError in
+            guard loadModelsError == nil else {
+                print("Could not load models")
+                return
+            }
+            Clarifai.sharedInstance().load(entityId: "wwtLogoModel", entityType: .model) { (dataModel, error) in
+                guard let model = dataModel as? Model else {
+                    DispatchQueue.main.async {
+                        completion(false)
+                    }
+                    return
+                }
+                self.wwtLogoModel = model
+                DispatchQueue.main.async {
+                    completion(true)
+                }
+            }
+        }
+    }
+    
+    func predict(image: UIImage, completion: @escaping (Bool) -> ()) {
+        let image = Image(image: image)
+        let dataAsset = DataAsset(image: image)
+        let input = Input(dataAsset: dataAsset)
+        wwtLogoModel?.predict([input]) { (outputs, error) in
+            print("\(error)")
+            print("\(outputs)")
+            completion(error != nil)
+        }
     }
 }

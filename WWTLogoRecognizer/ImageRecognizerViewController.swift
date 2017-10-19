@@ -33,5 +33,9 @@ class ImageRecognizerViewController: UIViewController {
         predict()
     }
     
-    private func predict() {}
+    private func predict() {
+        ClarifaiWrapper.shared.predict(image: image) { (success) in
+            print(success)
+        }
+    }
 }

@@ -17,7 +17,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpTapGesture()
+        ClarifaiWrapper.shared.loadModels { success in
+            if success {
+                print("!!!")
+                self.setUpTapGesture()
+            }
+        }
         startVideoPreview()
     }
     
@@ -63,7 +68,9 @@ class ViewController: UIViewController {
     
     @objc
     private func viewTapped() {
-        photoOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+        if captureSession.outputs.contains(photoOutput), captureSession.isRunning {
+            photoOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)            
+        }
     }
 }
 
