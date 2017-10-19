@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9707630B1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9707630A1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework */; };
-		9707630C1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9707630A1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9707630F1F98484D00B0D7B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9707630E1F98484D00B0D7B5 /* Accelerate.framework */; };
 		970763111F98485A00B0D7B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763101F98485A00B0D7B5 /* CoreGraphics.framework */; };
 		970763131F98486600B0D7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763121F98486600B0D7B5 /* Foundation.framework */; };
@@ -24,6 +22,7 @@
 		979FE7941F97F253004AB142 /* ImageRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7931F97F253004AB142 /* ImageRecognizerViewController.swift */; };
 		979FE7961F97F29F004AB142 /* ImageRecognizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7951F97F29F004AB142 /* ImageRecognizerViewController.xib */; };
 		979FE7981F97F8B6004AB142 /* ClarifaiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7971F97F8B6004AB142 /* ClarifaiWrapper.swift */; };
+		F355948038FBF4497E9DE746 /* Pods_WWTLogoRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0ECABE60A33BCCA967C4F2 /* Pods_WWTLogoRecognizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9707630C1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,8 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		100F57F696F4F368BC83CD46 /* Pods-WWTLogoRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWTLogoRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer.release.xcconfig"; sourceTree = "<group>"; };
+		3E0ECABE60A33BCCA967C4F2 /* Pods_WWTLogoRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWTLogoRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970763081F98482100B0D7B5 /* Clarifai_Apple_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Clarifai_Apple_SDK.framework; path = Clarifai/Clarifai_Apple_SDK.framework; sourceTree = "<group>"; };
-		9707630A1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Clarifai_Apple_SDK.framework; path = Clarifai/Clarifai_Apple_SDK.framework; sourceTree = "<group>"; };
 		9707630E1F98484D00B0D7B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		970763101F98485A00B0D7B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		970763121F98486600B0D7B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +59,7 @@
 		979FE7931F97F253004AB142 /* ImageRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognizerViewController.swift; sourceTree = "<group>"; };
 		979FE7951F97F29F004AB142 /* ImageRecognizerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageRecognizerViewController.xib; sourceTree = "<group>"; };
 		979FE7971F97F8B6004AB142 /* ClarifaiWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarifaiWrapper.swift; sourceTree = "<group>"; };
+		E8A17BFA0D293F0DE208B1FA /* Pods-WWTLogoRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWTLogoRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +74,22 @@
 				970763131F98486600B0D7B5 /* Foundation.framework in Frameworks */,
 				970763111F98485A00B0D7B5 /* CoreGraphics.framework in Frameworks */,
 				9707630F1F98484D00B0D7B5 /* Accelerate.framework in Frameworks */,
-				9707630B1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework in Frameworks */,
+				F355948038FBF4497E9DE746 /* Pods_WWTLogoRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B3A57992D5AF5E5FCDC395D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8A17BFA0D293F0DE208B1FA /* Pods-WWTLogoRecognizer.debug.xcconfig */,
+				100F57F696F4F368BC83CD46 /* Pods-WWTLogoRecognizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		970763071F98482100B0D7B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +101,7 @@
 				970763101F98485A00B0D7B5 /* CoreGraphics.framework */,
 				9707630E1F98484D00B0D7B5 /* Accelerate.framework */,
 				970763081F98482100B0D7B5 /* Clarifai_Apple_SDK.framework */,
+				3E0ECABE60A33BCCA967C4F2 /* Pods_WWTLogoRecognizer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,10 +109,10 @@
 		979FE7751F97DE26004AB142 = {
 			isa = PBXGroup;
 			children = (
-				9707630A1F98483A00B0D7B5 /* Clarifai_Apple_SDK.framework */,
 				979FE7801F97DE26004AB142 /* WWTLogoRecognizer */,
 				979FE77F1F97DE26004AB142 /* Products */,
 				970763071F98482100B0D7B5 /* Frameworks */,
+				7B3A57992D5AF5E5FCDC395D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,11 +147,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 979FE7901F97DE26004AB142 /* Build configuration list for PBXNativeTarget "WWTLogoRecognizer" */;
 			buildPhases = (
+				A163176DFE12FBE67F4D2207 /* [CP] Check Pods Manifest.lock */,
 				979FE77A1F97DE26004AB142 /* Sources */,
-				9707631C1F9848C000B0D7B5 /* ShellScript */,
 				9707630D1F98483B00B0D7B5 /* Embed Frameworks */,
 				979FE77B1F97DE26004AB142 /* Frameworks */,
 				979FE77C1F97DE26004AB142 /* Resources */,
+				52B74B7531D5942E7B75A1DD /* [CP] Embed Pods Frameworks */,
+				C2C83D1DC30F1009AA4F54F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,18 +213,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9707631C1F9848C000B0D7B5 /* ShellScript */ = {
+		52B74B7531D5942E7B75A1DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}\"/Clarifai/setup_framework.sh";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A163176DFE12FBE67F4D2207 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWTLogoRecognizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C83D1DC30F1009AA4F54F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWTLogoRecognizer/Pods-WWTLogoRecognizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -359,14 +406,12 @@
 		};
 		979FE7911F97DE26004AB142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A17BFA0D293F0DE208B1FA /* Pods-WWTLogoRecognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B33FA55WD3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Clarifai",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = WWTLogoRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BadlyCutProductions.WWTLogoRecognizer;
@@ -378,14 +423,12 @@
 		};
 		979FE7921F97DE26004AB142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100F57F696F4F368BC83CD46 /* Pods-WWTLogoRecognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B33FA55WD3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Clarifai",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = WWTLogoRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BadlyCutProductions.WWTLogoRecognizer;
