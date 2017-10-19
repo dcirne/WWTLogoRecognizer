@@ -7,13 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9707630F1F98484D00B0D7B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9707630E1F98484D00B0D7B5 /* Accelerate.framework */; };
-		970763111F98485A00B0D7B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763101F98485A00B0D7B5 /* CoreGraphics.framework */; };
-		970763131F98486600B0D7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763121F98486600B0D7B5 /* Foundation.framework */; };
-		970763151F98487C00B0D7B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763141F98487C00B0D7B5 /* libc++.tbd */; };
-		970763171F98488900B0D7B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763161F98488800B0D7B5 /* libsqlite3.tbd */; };
-		970763191F98489400B0D7B5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 970763181F98489400B0D7B5 /* libz.tbd */; };
-		9707631B1F98489E00B0D7B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9707631A1F98489E00B0D7B5 /* UIKit.framework */; };
+		8FC86E43E67BA056478A259C /* Pods_WWTLogoRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0ECABE60A33BCCA967C4F2 /* Pods_WWTLogoRecognizer.framework */; };
 		979FE7821F97DE26004AB142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7811F97DE26004AB142 /* AppDelegate.swift */; };
 		979FE7841F97DE26004AB142 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7831F97DE26004AB142 /* ViewController.swift */; };
 		979FE7871F97DE26004AB142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7851F97DE26004AB142 /* Main.storyboard */; };
@@ -22,7 +16,6 @@
 		979FE7941F97F253004AB142 /* ImageRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7931F97F253004AB142 /* ImageRecognizerViewController.swift */; };
 		979FE7961F97F29F004AB142 /* ImageRecognizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979FE7951F97F29F004AB142 /* ImageRecognizerViewController.xib */; };
 		979FE7981F97F8B6004AB142 /* ClarifaiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FE7971F97F8B6004AB142 /* ClarifaiWrapper.swift */; };
-		F355948038FBF4497E9DE746 /* Pods_WWTLogoRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0ECABE60A33BCCA967C4F2 /* Pods_WWTLogoRecognizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,14 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9707631B1F98489E00B0D7B5 /* UIKit.framework in Frameworks */,
-				970763191F98489400B0D7B5 /* libz.tbd in Frameworks */,
-				970763171F98488900B0D7B5 /* libsqlite3.tbd in Frameworks */,
-				970763151F98487C00B0D7B5 /* libc++.tbd in Frameworks */,
-				970763131F98486600B0D7B5 /* Foundation.framework in Frameworks */,
-				970763111F98485A00B0D7B5 /* CoreGraphics.framework in Frameworks */,
-				9707630F1F98484D00B0D7B5 /* Accelerate.framework in Frameworks */,
-				F355948038FBF4497E9DE746 /* Pods_WWTLogoRecognizer.framework in Frameworks */,
+				8FC86E43E67BA056478A259C /* Pods_WWTLogoRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
