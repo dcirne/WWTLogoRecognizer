@@ -9,20 +9,20 @@ class ClarifaiWrapper {
     private(set) var modelId: String?
     
     private init() {
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(willFetchModelNotification(notification:)),
-                                               name: NSNotification.Name.CAIWillFetchModel,
-                                               object: nil)
+        NotificationCenter.default.addObserver(forName: Notification.Name.CAIWillFetchModel,
+                                               object: nil,
+                                               queue: nil,
+                                               using: willFetchModelNotification)
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(didFetchModelNotification(notification:)),
-                                               name: NSNotification.Name.CAIDidFetchModel,
-                                               object: nil)
+        NotificationCenter.default.addObserver(forName: Notification.Name.CAIDidFetchModel,
+                                               object: nil,
+                                               queue: nil,
+                                               using: didFetchModelNotification)
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(modelDidBecomeAvailable(notification:)),
-                                               name: NSNotification.Name.CAIModelDidBecomeAvailable,
-                                               object: nil)
+        NotificationCenter.default.addObserver(forName: Notification.Name.CAIModelDidBecomeAvailable,
+                                               object: nil,
+                                               queue: nil,
+                                               using: modelDidBecomeAvailable)
     }
     
     func start(key: String) {
@@ -31,17 +31,17 @@ class ClarifaiWrapper {
     }
     
     @objc
-    private func willFetchModelNotification(notification: NSNotification) {
+    private func willFetchModelNotification(_ notification: Notification) {
         print("will fetch model")
     }
     
     @objc
-    private func didFetchModelNotification(notification: NSNotification) {
+    private func didFetchModelNotification(_ notification: Notification) {
         print("will fetch model")
     }
     
     @objc
-    private func modelDidBecomeAvailable(notification: NSNotification) {
+    private func modelDidBecomeAvailable(_ notification: Notification) {
         print("model did become available")
         guard let userInfo = notification.userInfo,
             let modelId = userInfo[CAIModelUniqueIdentifierKey] as? String else
